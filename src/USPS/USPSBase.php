@@ -180,8 +180,8 @@ class USPSBase {
       $errorInfo = $this->getValueByKey($arrayResponse, 'Error');
 
       if($errorInfo) {
-        $this->setErrorCode( $errorInfo['Number'] );
-        $this->setErrorMessage( $errorInfo['Description'] );
+        $this->setErrorCode( isset($errorInfo['Number']) ? $errorInfo['Number'] : 'missing error number' );
+        $this->setErrorMessage( isset($errorInfo['Description']) ? $errorInfo['Description'] : 'missing error description' );
       }
     }
 
