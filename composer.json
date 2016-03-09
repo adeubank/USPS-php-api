@@ -1,5 +1,5 @@
 {
-    "name": "pingdevelopment/usps-php-api",
+    "name": "adeubank/usps-php-api",
     "type": "library",
     "description": "Symfony-compatible PHP wrapper for USPS Web Tools API",
     "keywords": ["usps", "api"],
